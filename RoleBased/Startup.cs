@@ -41,6 +41,12 @@ namespace RoleBased
             services.AddTransient<IAdminBL, AdminBL>();
             services.AddTransient<IAdminRL, AdminRL>();
 
+            services.AddTransient<IProductBL, ProductBL>();
+            services.AddTransient<IProductRL, ProductRL>();
+
+            services.AddTransient<IFeedbackBL, FeedbackBL>();
+            services.AddTransient<IFeedbackRL, FeedbackRL>();
+
             services.AddCors(options =>
             {
                 options.AddPolicy(

@@ -63,7 +63,7 @@ namespace RepositoryLayer.Services
             var claims = new[] {
                 new Claim(ClaimTypes.Role,"User"),
                 new Claim(ClaimTypes.Email,Email),
-                new Claim("UserId",UserId.ToString())
+                new Claim("Id",UserId.ToString())
             };
             var token = new JwtSecurityToken(config["Jwt:Key"],
               config["Jwt:Key"],

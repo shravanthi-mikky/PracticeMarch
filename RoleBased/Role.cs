@@ -1,8 +1,8 @@
 ﻿namespace RoleBased
 {
-    public class Role
+    public static class Role
     {
-        public string Users = "Users";
-        public string Admin = "Admin";
+        public const string Users = "Users";
+        public const string Admin = "Admin";
     }
 }
