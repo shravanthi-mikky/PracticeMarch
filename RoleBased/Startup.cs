@@ -47,6 +47,9 @@ namespace RoleBased
             services.AddTransient<IFeedbackBL, FeedbackBL>();
             services.AddTransient<IFeedbackRL, FeedbackRL>();
 
+            services.AddTransient<IPaymentBL, PaymentBL>();
+            services.AddTransient<IPaymentRL, PaymentRL>();
+
             services.AddCors(options =>
             {
                 options.AddPolicy(

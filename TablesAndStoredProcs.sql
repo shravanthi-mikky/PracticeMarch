@@ -237,3 +237,15 @@ END
 select * from FeedbackTable
 
 update FeedbackTable set Comment='Good Book' where FeedbackId = 3
+
+----------PaymentTable----------------
+create table PayTable
+( PaymentId int Identity(1,1) PRIMARY KEY,
+cardHolder varchar(100), 
+cardNumber varchar(100), 
+ExpiryDate varchar(100), 
+CVV varchar(100) ) 
+
+select * from PayTable
+
+insert into PayTable(cardHolder,cardNumber,ExpiryDate,CVV) values ('shiva','1234567801231234','01/24','1234');
